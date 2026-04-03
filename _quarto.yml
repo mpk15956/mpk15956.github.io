@@ -4,6 +4,7 @@ project:
 website:
   title: "Michael Kerr"
   search: false
+  page-footer: "Copyright 2026, Michael Kerr"
   navbar:
     pinned: true
     right:
