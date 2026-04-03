@@ -5,6 +5,7 @@ website:
   title: "Michael Kerr"
   search: false
   navbar:
+    pinned: true
     right:
       - href: index.qmd
         text: Home

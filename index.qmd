@@ -1,5 +1,5 @@
 ---
-title: "website"
+title: "Michael Kerr"
 ---
 
 > Computational geographer bridging topological data analysis and high-performance computing to model sustainable environmental systems.
