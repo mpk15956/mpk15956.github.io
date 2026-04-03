@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Michael Kerr"
+  search: false
   navbar:
     right:
       - href: index.qmd
