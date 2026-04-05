@@ -1,46 +1,50 @@
 /* css styles */
 
-/* CV page — lock viewport height, let iframe fill remaining space.
-   Only flex on body for vertical stacking. #quarto-content keeps
-   its normal display so Quarto's horizontal layout is preserved. */
+/* Lock the CV page to exactly the viewport height */
 body.cv-page {
   height: 100dvh;
   overflow: hidden;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 }
 
 body.cv-page #quarto-content {
+  min-height: 0 !important;
   flex: 1;
-  min-height: 0;
+  overflow: hidden;
+}
+
+body.cv-page #quarto-margin-sidebar {
+  display: none;
 }
 
 body.cv-page main.content {
   height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  padding-bottom: 0;
+  overflow: hidden;
+}
+
+body.cv-page main.content > .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 body.cv-page .card {
   flex: 1;
-  min-height: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
-  border-bottom: none;
+  overflow: hidden;
 }
 
 body.cv-page .card-body {
   flex: 1;
-  min-height: 0;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
 
 body.cv-page .card-body iframe {
-  flex: 1;
-  min-height: 0;
-  width: 100%;
-  border: none;
+  height: 100% !important;
 }
