@@ -1,7 +1,8 @@
 /* css styles */
 
-/* CV page — flex layout locks the viewport, footer stays visible,
-   iframe fills exactly the remaining space */
+/* CV page — lock viewport height, let iframe fill remaining space.
+   Only flex on body for vertical stacking. #quarto-content keeps
+   its normal display so Quarto's horizontal layout is preserved. */
 body.cv-page {
   height: 100dvh;
   overflow: hidden;
@@ -12,13 +13,10 @@ body.cv-page {
 body.cv-page #quarto-content {
   flex: 1;
   min-height: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 body.cv-page main.content {
-  flex: 1;
-  min-height: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
