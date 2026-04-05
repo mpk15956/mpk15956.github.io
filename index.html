@@ -110,6 +110,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </header>
     <div class="about-links">
+  <a href="/cv.pdf" class="about-link" rel="" target="">
+    <i class="bi bi-file-earmark-pdf"></i>
+     <span class="about-link-text">CV</span>
+  </a>
+  <a href="mailto:michael.kerr@uga.edu" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">michael.kerr@uga.edu</span>
+  </a>
   <a href="https://github.com/mpk15956" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">Github</span>
@@ -154,6 +162,11 @@ document.addEventListener('DOMContentLoaded', function() {
   backdrop.addEventListener('click', function() {
     bootstrap.Collapse.getInstance(navEl).hide();
   });
+});
+
+// Prevent mailto: links in the about sidebar from opening a mail client
+document.querySelectorAll('.about-link[href^="mailto:"]').forEach(function(link) {
+  link.addEventListener('click', function(e) { e.preventDefault(); });
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
