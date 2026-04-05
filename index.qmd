@@ -4,6 +4,12 @@ about:
     template: trestles
     image: profile.jpg
     links:
+        -   icon: file-earmark-pdf
+            text: CV
+            href: cv.pdf
+        -   icon: envelope
+            text: michael.kerr@uga.edu
+            href: mailto:michael.kerr@uga.edu
         -   icon: github
             text: Github
             href: https://github.com/mpk15956

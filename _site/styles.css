@@ -1,5 +1,23 @@
 /* css styles */
 
+/* ── About sidebar: vertical stacked standard hyperlinks ── */
+div.quarto-about-trestles .about-entity .about-links {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5em;
+}
+div.quarto-about-trestles .about-entity .about-link {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  color: var(--bs-link-color);
+  text-decoration: underline;
+}
+div.quarto-about-trestles .about-entity .about-link:hover {
+  color: var(--bs-link-hover-color);
+  text-decoration: underline;
+}
+
 /* ── Mobile nav overlay (hamburger menu) ── */
 @media (max-width: 991.98px) {
   #navbarCollapse {
