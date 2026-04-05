@@ -1,10 +1,12 @@
 ---
 title: "CV"
 toc: false
+page-layout: full
+body-classes: cv-page
 ---
 
 ```{=html}
-<div class="card mb-3">
+<div class="card">
   <div class="card-header d-flex justify-content-end gap-2">
     <a href="cv.pdf" target="_blank" class="btn btn-outline-primary btn-sm" title="Open in New Tab">
       <i class="bi bi-box-arrow-up-right"></i> Open in New Tab
@@ -14,7 +16,7 @@ toc: false
     </a>
   </div>
   <div class="card-body p-0">
-    <iframe src="cv.pdf" style="width: 100%; height: calc(100vh - 160px); border: none;" title="Michael Kerr CV"></iframe>
+    <iframe src="cv.pdf" title="Michael Kerr CV"></iframe>
   </div>
 </div>
 ```
