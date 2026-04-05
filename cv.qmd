@@ -1,9 +1,19 @@
 ---
 title: "CV"
+toc: false
 ---
 
 ```{=html}
-<script>document.body.classList.add('cv-page');</script>
+<script>
+document.body.classList.add('cv-page');
+// Measure navbar and footer once so the layout stays fixed when the hamburger menu opens
+document.addEventListener('DOMContentLoaded', function() {
+  var navH = document.getElementById('quarto-header').offsetHeight;
+  var footH = document.querySelector('footer.footer').offsetHeight;
+  document.documentElement.style.setProperty('--cv-nav-height', navH + 'px');
+  document.documentElement.style.setProperty('--cv-footer-height', footH + 'px');
+});
+</script>
 <div class="container" style="padding-top: 1em;">
   <div class="card" style="overflow: hidden;">
     <div class="card-header d-flex justify-content-end gap-2">

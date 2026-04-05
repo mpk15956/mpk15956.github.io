@@ -125,6 +125,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var navEl = document.getElementById('navbarCollapse');
+  if (!navEl) return;
+
+  var backdrop = document.createElement('div');
+  backdrop.className = 'nav-backdrop';
+  document.body.appendChild(backdrop);
+
+  navEl.addEventListener('show.bs.collapse', function() {
+    backdrop.classList.add('show');
+  });
+
+  navEl.addEventListener('hide.bs.collapse', function() {
+    backdrop.classList.remove('show');
+  });
+
+  backdrop.addEventListener('click', function() {
+    bootstrap.Collapse.getInstance(navEl).hide();
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

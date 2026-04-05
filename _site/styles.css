@@ -1,26 +1,53 @@
 /* css styles */
 
-/* Lock the CV page to exactly the viewport height */
-body.cv-page {
-  height: 100dvh;
-  overflow: hidden;
-  display: flex !important;
-  flex-direction: column;
+/* ── Mobile nav overlay (hamburger menu) ── */
+@media (max-width: 991.98px) {
+  #navbarCollapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    background: var(--bs-dark, #212529);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  .nav-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1025;
+  }
+
+  .nav-backdrop.show {
+    display: block;
+  }
 }
 
+/* Lock the CV page to the viewport — no page scroll */
+body.cv-page {
+  overflow: hidden;
+}
+
+/* Anchor content to the viewport so it never shifts when the navbar expands */
 body.cv-page #quarto-content {
   min-height: 0 !important;
-  flex: 1;
+  position: fixed !important;
+  top: var(--cv-nav-height, 66px);
+  bottom: var(--cv-footer-height, 40px);
+  width: 100%;
   overflow: hidden;
 }
 
-body.cv-page #quarto-margin-sidebar {
-  display: none;
+body.cv-page footer.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 body.cv-page main.content {
   height: 100%;
-  flex: 1;
   display: flex;
   flex-direction: column;
   overflow: hidden;

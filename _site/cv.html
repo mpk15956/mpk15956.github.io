@@ -56,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,9 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -120,7 +118,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<script>document.body.classList.add('cv-page');</script>
+<script>
+document.body.classList.add('cv-page');
+// Measure navbar and footer once so the layout stays fixed when the hamburger menu opens
+document.addEventListener('DOMContentLoaded', function() {
+  var navH = document.getElementById('quarto-header').offsetHeight;
+  var footH = document.querySelector('footer.footer').offsetHeight;
+  document.documentElement.style.setProperty('--cv-nav-height', navH + 'px');
+  document.documentElement.style.setProperty('--cv-footer-height', footH + 'px');
+});
+</script>
 <div class="container" style="padding-top: 1em;">
   <div class="card" style="overflow: hidden;">
     <div class="card-header d-flex justify-content-end gap-2">
@@ -140,6 +147,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var navEl = document.getElementById('navbarCollapse');
+  if (!navEl) return;
+
+  var backdrop = document.createElement('div');
+  backdrop.className = 'nav-backdrop';
+  document.body.appendChild(backdrop);
+
+  navEl.addEventListener('show.bs.collapse', function() {
+    backdrop.classList.add('show');
+  });
+
+  navEl.addEventListener('hide.bs.collapse', function() {
+    backdrop.classList.remove('show');
+  });
+
+  backdrop.addEventListener('click', function() {
+    bootstrap.Collapse.getInstance(navEl).hide();
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

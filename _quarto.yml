@@ -19,6 +19,7 @@ format:
       - Cosmo
     css: styles.css
     toc: true
+    include-after-body: nav-overlay.html
 
 execute:
   freeze: auto
