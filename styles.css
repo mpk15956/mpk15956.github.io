@@ -28,6 +28,7 @@ body.cv-page .card {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
+  border-bottom: none;
 }
 
 body.cv-page .card-body {
