@@ -1,5 +1,15 @@
 ---
 title: "Michael Kerr"
+about: 
+    template: trestles
+    image: profile.jpg
+    links:
+        -   icon: github
+            text: Github
+            href: https://github.com/mpk15956
+        -   icon: linkedin
+            text: LinkedIn
+            href: https://www.linkedin.com/in/mpk15956
 ---
 
 > Computational geographer bridging topological data analysis and high-performance computing to model sustainable environmental systems.
