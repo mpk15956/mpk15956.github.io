@@ -58,7 +58,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,9 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -122,8 +120,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<iframe src="cv.pdf" width="100%" height="600px">
-</iframe>
+<div class="card mb-3">
+  <div class="card-header d-flex justify-content-end gap-2">
+    <a href="cv.pdf" target="_blank" class="btn btn-outline-primary btn-sm" title="Open in New Tab">
+      <i class="bi bi-box-arrow-up-right"></i> Open in New Tab
+    </a>
+    <a href="cv.pdf" download="" class="btn btn-primary btn-sm" title="Download CV">
+      <i class="bi bi-download"></i> Download
+    </a>
+  </div>
+  <div class="card-body p-0">
+    <iframe src="cv.pdf" style="width: 100%; height: calc(100vh - 160px); border: none;" title="Michael Kerr CV"></iframe>
+  </div>
+</div>
 
 
 
