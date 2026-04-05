@@ -1,7 +1,6 @@
 ---
 title: "CV"
 toc: false
-page-layout: full
 body-classes: cv-page
 ---
 
