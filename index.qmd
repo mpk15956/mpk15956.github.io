@@ -19,7 +19,7 @@ about:
             href: https://www.linkedin.com/in/mpk15956
 ---
 
-I am a computational geographer specializing in high-performance computing and machine learning for complex spatial systems. My current research is on spatial statistics, optimization, and algorithmic equity. I aim to identify robust, scale-invariant patterns in environmental data. As I transition to graduate research, my focus is shifting toward geospatial computer vision and scaling neural rendering models (NeRFs) for real-time edge hardware. I am also investigating how dynamical systems, PDEs, and tensor methods can be used to develop interpretable, physics-informed machine learning models. My goal is to translate advanced mathematical theory into practical, sustainable strategies.
+I am a computational geographer integrating high-performance computing, machine learning, and spatial statistics to address pressing problems. My research transforms complex, multi-dimensional data into interpretable models, emphasizing spatial optimization and algorithmic equity to reveal meaningful, scale-invariant patterns. As I transition to graduate research, I am focused on deploying computer vision and the neural rendering models (NeRFs) for real-time edge hardware. Exploring methods for learning from differential equations and tensor methods, I aim to develop physics-based models that bridge advanced mathematics with actionable strategies for environmental resilience and social equity.
 
 ## Research Interests
 * **Computer Vision** & Edge Computing 
