@@ -1,5 +1,5 @@
 ---
-title: "Michael Kerr"
+title: "Michael P. Kerr"
 toc: false
 about: 
     template: trestles
