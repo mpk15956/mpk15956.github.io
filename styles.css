@@ -11,10 +11,15 @@ div.quarto-about-trestles .about-entity .about-link {
   padding: 0;
   border-radius: 0;
   color: var(--bs-link-color);
+  text-decoration: none;
+}
+div.quarto-about-trestles .about-entity .about-link .about-link-text {
   text-decoration: underline;
 }
 div.quarto-about-trestles .about-entity .about-link:hover {
   color: var(--bs-link-hover-color);
+}
+div.quarto-about-trestles .about-entity .about-link:hover .about-link-text {
   text-decoration: underline;
 }
 
