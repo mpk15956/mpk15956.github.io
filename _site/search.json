@@ -18,6 +18,20 @@
     "href": "index.html",
     "title": "Michael Kerr",
     "section": "",
-    "text": "Computational geographer bridging topological data analysis and high-performance computing to model sustainable environmental systems.\n\nI apply topological data analysis and spatial statistics to uncover robust, scale-invariant patterns in the transformation of environmental systems. By backing mathematical models with custom Linux and Docker-based computing infrastructure, I engineer sustainable, high-performance pipelines to tackle complex geospatial challenges.\nAt the University of Georgia, I analyzed green space use using anonymous GPS data to identify regional barriers and inform health models. Earlier, I developed ArcPy scripts at UGA’s Carl Vinson Institute, combining over 14,000 spatial records to improve data and workflow productivity.\nMy approach unites state-of-the-art computational theory alongside practical environmental leadership. Serving as an Ecology Program Director and an Eagle Scout grounded my scientific work in a humanitarian reality, teaching me to translate complex ecological systems into tangible conservation outcomes and community campaigns.\nMy research focuses on improving landscape modeling, aerial imagery interpretation, and feature extraction using geometric and data science methods. My long-term goal is to develop interpretable, scalable models that inform global strategies for land use, conservation, and environmental decision-making.\nI welcome collaboration with researchers and organizations advancing geospatial analytics, advanced computing, and environmental modeling. Please get in touch if you are interested in partnering on innovative projects or interdisciplinary research."
+    "text": "I am a computational geographer specializing in high-performance computing and machine learning for complex spatial systems. My current research is on spatial statistics, optimization, and algorithmic equity. I aim to identify robust, scale-invariant patterns in environmental data. As I transition to graduate research, my focus is shifting toward geospatial computer vision and scaling neural rendering models (NeRFs) for real-time edge hardware. I am also investigating how dynamical systems, PDEs, and tensor methods can be used to develop interpretable, physics-informed machine learning models. My goal is to translate advanced mathematical theory into practical, sustainable strategies."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Michael Kerr",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nComputer Vision & Edge Computing\nSpatial Optimization & Algorithmic Fairness\nTopological Data Analysis (TDA) & Spatial Statistics\nScientific Machine Learning (SciML) & Tensor Decomposition"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Michael Kerr",
+    "section": "Education",
+    "text": "Education\nUniversity of Georgia, Athens, GA\nB.S. in Geography & Applied Mathematics (Expected July 2026)"
   }
 ]
