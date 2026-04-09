@@ -1,5 +1,8 @@
 ---
 title: "Projects"
+listing:
+  contents: "projects/*/*.qmd"
+  type: grid
+  sort: "date desc"
+  categories: true
 ---
-
-TODO

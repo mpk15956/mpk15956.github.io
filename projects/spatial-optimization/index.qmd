@@ -1,0 +1,29 @@
+---
+title: "Multi-Objective Spatial Optimization"
+description: "Balancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains."
+date: "2026-03-01"
+categories: [Optimization, Spatial Statistics, Python, Operations Research]
+toc: true
+---
+
+## Background
+
+In spatial resource distribution, there is a fundamental tension between optimizing for systemic equity and controlling for spatial clustering. Using the combinatorial map generation of the game Twilight Imperium IV as a discrete search domain, this project investigates the mathematical pathology that occurs when scalar equity metrics are optimized without regard for local topological structures. The objective was to evaluate whether systemic bottleneck fairness and geographic dispersion are mutually exclusive.
+
+## Methodology
+
+I built a custom Python optimization engine to traverse the highly constrained discrete state-space of map topologies, leveraging object-oriented metaheuristics.
+
+* The core architecture is built in Python, utilizing object-oriented design to implement custom metaheuristic frameworks from scratch.
+* I implemented and benchmarked several search algorithms, including Simulated Annealing (SA), NSGA-II, and Tabu Search. SA was selected as the primary solver for the study due to its superior convergence on this specific discrete landscape across 500,000-evaluation budgets.
+* The model evaluates a 1:1:1 composite objective, forcing the algorithms to simultaneously balance Jain’s Fairness Index (JFI) for baseline equity, Global Moran’s I for systemic dispersion, and a Local Spatial Autocorrelation Proxy (LSAP) to penalize unnatural clustering.
+
+## Results
+
+A computational study comprising five ablation conditions across 100 paired seeds revealed that scalar fairness fails to capture neighborhood patterns.
+
+When optimizing strictly for global dispersion without a local penalty, a pathological local clustering effect emerged, which is a problem entirely absent in random or purely fairness-optimized maps. However, by introducing the local term (LSAP) to the composite objective, the optimizer successfully suppressed this structural pathology with a negligible cost to median Jain’s Fairness.
+
+## Conclusion
+
+This work extends Anselin’s global-local (LISA) distinction into the realm of combinatorial optimization. The empirical evidence demonstrates that spatial metrics provide vital structural information beyond standard scalar fairness constraints, showing that equity and dispersion can be mathematically harmonized.

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-12-04">
+<meta name="description" content="Evaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.">
 
-<title>Projects – Michael P. Kerr</title>
+<title>Topological Data Analysis of Karst Terrain – Michael P. Kerr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +25,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -53,35 +53,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -113,7 +84,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -123,7 +94,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Michael P. Kerr</span>
     </a>
   </div>
@@ -133,15 +104,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -156,21 +127,47 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RGF0YSUyMEVuZ2luZWVyaW5n">Data Engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2VvbW9ycGhvbWV0cnk=">Geomorphometry <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R0lT">GIS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3BlcmF0aW9ucyUyMFJlc2VhcmNo">Operations Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3B0aW1pemF0aW9u">Optimization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U3BhdGlhbCUyMEVxdWl0eQ==">Spatial Equity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3BhdGlhbCUyMFN0YXRpc3RpY3M=">Spatial Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VG9wb2xvZ2ljYWwlMjBEYXRhJTIwQW5hbHlzaXMlMjAoVERBKQ==">Topological Data Analysis (TDA) <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<h1 class="title">Topological Data Analysis of Karst Terrain</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Topological Data Analysis (TDA)</div>
+    <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Geomorphometry</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Evaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 4, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -180,118 +177,45 @@ window.Quarto = {
 </header>
 
 
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Karst landscapes, such as the Mammoth Cave system in Kentucky, present a unique geomorphological challenge. Their defining features (sinkholes, complex drainage networks, and subterranean voids) are highly topological in nature. Traditional geomorphometry relies on multi-scale derivative calculations (e.g., slope, aspect, TWI) that are computationally intensive and difficult to scale. Conversely, modern deep learning vision models are powerful but relatively opaque feature extractors. This project investigated whether topological data analysis (TDA) could serve as a mathematically interpretable, computationally efficient alternative to extract multiscale spatial features from digital elevation models (DEMs).</p>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>A feature extraction and evaluation pipeline was developed to process over 30,000 DEM tiles, enabling a comparative analysis of traditional geomorphometric features, pre-trained vision models (ResNet), and TDA-derived attributes.</p>
+<ul>
+<li>Pipeline implementation was conducted in Python, integrating giotto-tda for topological computations, WhiteboxTools for terrain-derivative generation, and scikit-learn for machine-learning classification.</li>
+<li>To maintain mathematical validity, persistent homology was excluded from circular variables (e.g., aspect) and aggregate statistical descriptors (e.g., texture). TDA was strictly applied to elevation and slope derivatives. Terrain topology was encoded using Betti curves to form stable vector representations.</li>
+<li>Model performance was assessed using F1-macro scores, leveraging both random and spatially constrained 5-fold cross-validation to evaluate geographic generalization.</li>
+</ul>
+<p>To visualize the semantic alignment between these vastly different approaches, we map how each method interprets the same discrete piece of terrain (<strong>Figure 1</strong>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="feature-comparison.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 1:</strong> A comparison of the topological feature representations of the same karst terrain tile.</figcaption>
+</figure>
+</div>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>Rigorous equivalence testing was conducted using Two One-Sided Tests (TOST), with Bonferroni correction applied (<span class="math inline">\(\alpha=0.000714\)</span>) to rigorously control for type I error.</p>
+<p>The empirical evidence revealed that while pure TDA was efficient (<strong>Figure 2</strong>), it underperforms traditional geomorphometry as a standalone classifier (F1: 0.606 vs.&nbsp;0.731). The statistical testing identified three robust hybrid methods, each combining various traditional geomorphometry features (e.g., slope, aspect, TWI) with topological Betti feature representations from TDA. Specifically, a Multi-scale (traditional spatial derivatives) + Betti (TDA-based) feature union achieved practical predictive equivalence (F1: 0.663 in spatial CV) compared to the best traditional baseline.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="timing.png" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 2:</strong> Computational feasibility comparison demonstrating the significant time reduction achieved by TDA pipelines (~0.0087 seconds per tile) compared to traditional multi-scale derivatives (~0.4648 seconds).</figcaption>
+</figure>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>These results demonstrate that topological features are highly efficient, low-dimensional supplements to classical spatial statistics. Consequently, TDA is best employed alongside, rather than as a substitute for, physics-driven geomorphological derivatives.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="T3B0aW1pemF0aW9uJTJDU3BhdGlhbCUyMFN0YXRpc3RpY3MlMkNQeXRob24lMkNPcGVyYXRpb25zJTIwUmVzZWFyY2g=" data-listing-date-sort="1772341200000" data-listing-file-modified-sort="1775695215577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
-<a href="./projects/spatial-optimization/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multi-Objective Spatial Optimization
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('T3B0aW1pemF0aW9u'); return false;">Optimization</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhdGlhbCUyMFN0YXRpc3RpY3M='); return false;">Spatial Statistics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlcmF0aW9ucyUyMFJlc2VhcmNo'); return false;">Operations Research</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Balancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Mar 1, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="VG9wb2xvZ2ljYWwlMjBEYXRhJTIwQW5hbHlzaXMlMjAoVERBKSUyQ01hY2hpbmUlMjBMZWFybmluZyUyQ1B5dGhvbiUyQ0dlb21vcnBob21ldHJ5" data-listing-date-sort="1764824400000" data-listing-file-modified-sort="1775694726472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
-<a href="./projects/karst-tda/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/karst-tda/featured.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Topological Data Analysis of Karst Terrain
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VG9wb2xvZ2ljYWwlMjBEYXRhJTIwQW5hbHlzaXMlMjAoVERBKQ=='); return false;">Topological Data Analysis (TDA)</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2VvbW9ycGhvbWV0cnk='); return false;">Geomorphometry</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Evaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Dec 4, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMEVuZ2luZWVyaW5nJTJDUHl0aG9uJTJDR0lTJTJDU3BhdGlhbCUyMEVxdWl0eQ==" data-listing-date-sort="1738386000000" data-listing-file-modified-sort="1775694456458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
-<a href="./projects/green-space-equity/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./projects/green-space-equity/featured.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Urban Green Space Utilization and Spatial Equity
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEVuZ2luZWVyaW5n'); return false;">Data Engineering</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3BhdGlhbCUyMEVxdWl0eQ=='); return false;">Spatial Equity</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Engineering a geospatial data pipeline to analyze crowdsourced GPS trajectories and environmental accessibility.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Feb 1, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var navEl = document.getElementById('navbarCollapse');
