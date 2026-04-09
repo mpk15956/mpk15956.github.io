@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-03-01">
+<meta name="description" content="Balancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.">
 
-<title>CV – Michael P. Kerr</title>
+<title>Multi-Objective Spatial Optimization – Michael P. Kerr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,19 +25,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -53,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Michael P. Kerr</span>
     </a>
   </div>
@@ -73,15 +75,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./cv.html" aria-current="page"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -95,20 +97,48 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CV</h1>
-</div>
+<h1 class="title">Multi-Objective Spatial Optimization</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Optimization</div>
+    <div class="quarto-category">Spatial Statistics</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Operations Research</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Balancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -118,33 +148,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<script>
-document.body.classList.add('cv-page');
-// Measure navbar and footer once so the layout stays fixed when the hamburger menu opens
-document.addEventListener('DOMContentLoaded', function() {
-  var navH = document.getElementById('quarto-header').offsetHeight;
-  var footH = document.querySelector('footer.footer').offsetHeight;
-  document.documentElement.style.setProperty('--cv-nav-height', navH + 'px');
-  document.documentElement.style.setProperty('--cv-footer-height', footH + 'px');
-});
-</script>
-<div class="container" style="padding-top: 1em;">
-  <div class="card" style="overflow: hidden;">
-    <div class="card-header d-flex justify-content-end gap-2">
-      <a href="cv.pdf" target="_blank" class="btn btn-outline-primary btn-sm" title="Open in New Tab">
-        <i class="bi bi-box-arrow-up-right"></i> Open in New Tab
-      </a>
-      <a href="cv.pdf" download="" class="btn btn-primary btn-sm" title="Download CV">
-        <i class="bi bi-download"></i> Download
-      </a>
-    </div>
-    <div class="card-body p-0">
-      <iframe src="cv.pdf" style="width: 100%; height: 100%; border: 0 !important; display: block; margin: 0; padding: 0;" title="Michael Kerr CV"></iframe>
-    </div>
-  </div>
-</div>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>In spatial resource distribution, there is a fundamental tension between optimizing for systemic equity and controlling for spatial clustering. Using the combinatorial map generation of the game Twilight Imperium IV as a discrete search domain, this project investigates the mathematical pathology that occurs when scalar equity metrics are optimized without regard for local topological structures. The objective was to evaluate whether systemic bottleneck fairness and geographic dispersion are mutually exclusive.</p>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>I built a custom Python optimization engine to traverse the highly constrained discrete state-space of map topologies, leveraging object-oriented metaheuristics.</p>
+<ul>
+<li>The core architecture is built in Python, utilizing object-oriented design to implement custom metaheuristic frameworks from scratch.</li>
+<li>I implemented and benchmarked several search algorithms, including Simulated Annealing (SA), NSGA-II, and Tabu Search. SA was selected as the primary solver for the study due to its superior convergence on this specific discrete landscape across 500,000-evaluation budgets.</li>
+<li>The model evaluates a 1:1:1 composite objective, forcing the algorithms to simultaneously balance Jain’s Fairness Index (JFI) for baseline equity, Global Moran’s I for systemic dispersion, and a Local Spatial Autocorrelation Proxy (LSAP) to penalize unnatural clustering.</li>
+</ul>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>A computational study comprising five ablation conditions across 100 paired seeds revealed that scalar fairness fails to capture neighborhood patterns.</p>
+<p>When optimizing strictly for global dispersion without a local penalty, a pathological local clustering effect emerged, which is a problem entirely absent in random or purely fairness-optimized maps. However, by introducing the local term (LSAP) to the composite objective, the optimizer successfully suppressed this structural pathology with a negligible cost to median Jain’s Fairness.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This work extends Anselin’s global-local (LISA) distinction into the realm of combinatorial optimization. The empirical evidence demonstrates that spatial metrics provide vital structural information beyond standard scalar fairness constraints, showing that equity and dispersion can be mathematically harmonized.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>
