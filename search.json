@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
-    "section": "",
-    "text": "Open in New Tab\n      \n      \n         Download"
-  },
-  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
     "text": "Multi-Objective Spatial Optimization\n\n\n\nOptimization\n\nSpatial Statistics\n\nPython\n\nOperations Research\n\n\n\nBalancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Data Analysis of Karst Terrain\n\n\n\nTopological Data Analysis (TDA)\n\nMachine Learning\n\nPython\n\nGeomorphometry\n\n\n\nEvaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.\n\n\n\n\n\n\nDec 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nUrban Green Space Utilization and Spatial Equity\n\n\n\nData Engineering\n\nPython\n\nGIS\n\nSpatial Equity\n\n\n\nEngineering a geospatial data pipeline to analyze crowdsourced GPS trajectories and environmental accessibility.\n\n\n\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Open in New Tab\n      \n      \n         Download"
   },
   {
     "objectID": "projects/green-space-equity/index.html",
@@ -56,41 +56,6 @@
     "text": "Conclusion\nThis project demonstrates how data engineering can bridge the gap between theoretical and empirical models of environmental equity. By converting complex mobility data into actionable measures of green space utilization, the work builds on detailed analysis of amenities, statistical outliers, and spatial clusters identified throughout Athens, Georgia. These advances connect usage patterns to real equity concerns, delivering clearer evidence for researchers and policymakers to address urban environmental equity effectively."
   },
   {
-    "objectID": "projects/spatial-optimization/index.html",
-    "href": "projects/spatial-optimization/index.html",
-    "title": "Multi-Objective Spatial Optimization",
-    "section": "",
-    "text": "In spatial resource distribution, there is a fundamental tension between optimizing for systemic equity and controlling for spatial clustering. Using the combinatorial map generation of the game Twilight Imperium IV as a discrete search domain, this project investigates the mathematical pathology that occurs when scalar equity metrics are optimized without regard for local topological structures. The objective was to evaluate whether systemic bottleneck fairness and geographic dispersion are mutually exclusive."
-  },
-  {
-    "objectID": "projects/spatial-optimization/index.html#background",
-    "href": "projects/spatial-optimization/index.html#background",
-    "title": "Multi-Objective Spatial Optimization",
-    "section": "",
-    "text": "In spatial resource distribution, there is a fundamental tension between optimizing for systemic equity and controlling for spatial clustering. Using the combinatorial map generation of the game Twilight Imperium IV as a discrete search domain, this project investigates the mathematical pathology that occurs when scalar equity metrics are optimized without regard for local topological structures. The objective was to evaluate whether systemic bottleneck fairness and geographic dispersion are mutually exclusive."
-  },
-  {
-    "objectID": "projects/spatial-optimization/index.html#methodology",
-    "href": "projects/spatial-optimization/index.html#methodology",
-    "title": "Multi-Objective Spatial Optimization",
-    "section": "Methodology",
-    "text": "Methodology\nI built a custom Python optimization engine to traverse the highly constrained discrete state-space of map topologies, leveraging object-oriented metaheuristics.\n\nThe core architecture is built in Python, utilizing object-oriented design to implement custom metaheuristic frameworks from scratch.\nI implemented and benchmarked several search algorithms, including Simulated Annealing (SA), NSGA-II, and Tabu Search. SA was selected as the primary solver for the study due to its superior convergence on this specific discrete landscape across 500,000-evaluation budgets.\nThe model evaluates a 1:1:1 composite objective, forcing the algorithms to simultaneously balance Jain’s Fairness Index (JFI) for baseline equity, Global Moran’s I for systemic dispersion, and a Local Spatial Autocorrelation Proxy (LSAP) to penalize unnatural clustering."
-  },
-  {
-    "objectID": "projects/spatial-optimization/index.html#results",
-    "href": "projects/spatial-optimization/index.html#results",
-    "title": "Multi-Objective Spatial Optimization",
-    "section": "Results",
-    "text": "Results\nA computational study comprising five ablation conditions across 100 paired seeds revealed that scalar fairness fails to capture neighborhood patterns.\nWhen optimizing strictly for global dispersion without a local penalty, a pathological local clustering effect emerged, which is a problem entirely absent in random or purely fairness-optimized maps. However, by introducing the local term (LSAP) to the composite objective, the optimizer successfully suppressed this structural pathology with a negligible cost to median Jain’s Fairness."
-  },
-  {
-    "objectID": "projects/spatial-optimization/index.html#conclusion",
-    "href": "projects/spatial-optimization/index.html#conclusion",
-    "title": "Multi-Objective Spatial Optimization",
-    "section": "Conclusion",
-    "text": "Conclusion\nThis work extends Anselin’s global-local (LISA) distinction into the realm of combinatorial optimization. The empirical evidence demonstrates that spatial metrics provide vital structural information beyond standard scalar fairness constraints, showing that equity and dispersion can be mathematically harmonized."
-  },
-  {
     "objectID": "projects/karst-tda/index.html",
     "href": "projects/karst-tda/index.html",
     "title": "Topological Data Analysis of Karst Terrain",
@@ -124,6 +89,41 @@
     "title": "Topological Data Analysis of Karst Terrain",
     "section": "Conclusion",
     "text": "Conclusion\nThese results demonstrate that topological features are highly efficient, low-dimensional supplements to classical spatial statistics. Consequently, TDA is best employed alongside, rather than as a substitute for, physics-driven geomorphological derivatives."
+  },
+  {
+    "objectID": "projects/spatial-optimization/index.html",
+    "href": "projects/spatial-optimization/index.html",
+    "title": "Multi-Objective Spatial Optimization",
+    "section": "",
+    "text": "In spatial resource distribution, there is a fundamental tension between optimizing for systemic equity and controlling for spatial clustering. Using the combinatorial map generation of the game Twilight Imperium IV as a discrete search domain, this project investigates the mathematical pathology that occurs when scalar equity metrics are optimized without regard for local topological structures. The objective was to evaluate whether systemic bottleneck fairness and geographic dispersion are mutually exclusive."
+  },
+  {
+    "objectID": "projects/spatial-optimization/index.html#background",
+    "href": "projects/spatial-optimization/index.html#background",
+    "title": "Multi-Objective Spatial Optimization",
+    "section": "",
+    "text": "In spatial resource distribution, there is a fundamental tension between optimizing for systemic equity and controlling for spatial clustering. Using the combinatorial map generation of the game Twilight Imperium IV as a discrete search domain, this project investigates the mathematical pathology that occurs when scalar equity metrics are optimized without regard for local topological structures. The objective was to evaluate whether systemic bottleneck fairness and geographic dispersion are mutually exclusive."
+  },
+  {
+    "objectID": "projects/spatial-optimization/index.html#methodology",
+    "href": "projects/spatial-optimization/index.html#methodology",
+    "title": "Multi-Objective Spatial Optimization",
+    "section": "Methodology",
+    "text": "Methodology\nI built a custom Python optimization engine to traverse the highly constrained discrete state-space of map topologies, leveraging object-oriented metaheuristics.\n\nThe core architecture is built in Python, utilizing object-oriented design to implement custom metaheuristic frameworks from scratch.\nI implemented and benchmarked several search algorithms, including Simulated Annealing (SA), NSGA-II, and Tabu Search. SA was selected as the primary solver for the study due to its superior convergence on this specific discrete landscape across 500,000-evaluation budgets.\nThe model evaluates a 1:1:1 composite objective, forcing the algorithms to simultaneously balance Jain’s Fairness Index (JFI) for baseline equity, Global Moran’s I for systemic dispersion, and a Local Spatial Autocorrelation Proxy (LSAP) to penalize unnatural clustering."
+  },
+  {
+    "objectID": "projects/spatial-optimization/index.html#results",
+    "href": "projects/spatial-optimization/index.html#results",
+    "title": "Multi-Objective Spatial Optimization",
+    "section": "Results",
+    "text": "Results\nA computational study comprising five ablation conditions across 100 paired seeds revealed that scalar fairness fails to capture neighborhood patterns.\nWhen optimizing strictly for global dispersion without a local penalty, a pathological local clustering effect emerged, which is a problem entirely absent in random or purely fairness-optimized maps. However, by introducing the local term (LSAP) to the composite objective, the optimizer successfully suppressed this structural pathology with a negligible cost to median Jain’s Fairness."
+  },
+  {
+    "objectID": "projects/spatial-optimization/index.html#conclusion",
+    "href": "projects/spatial-optimization/index.html#conclusion",
+    "title": "Multi-Objective Spatial Optimization",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis work extends Anselin’s global-local (LISA) distinction into the realm of combinatorial optimization. The empirical evidence demonstrates that spatial metrics provide vital structural information beyond standard scalar fairness constraints, showing that equity and dispersion can be mathematically harmonized."
   },
   {
     "objectID": "index.html",
