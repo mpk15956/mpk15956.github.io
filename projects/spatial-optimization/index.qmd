@@ -2,7 +2,7 @@
 title: "Multi-Objective Spatial Optimization"
 description: "Balancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains."
 date: "2026-03-01"
-categories: [Optimization, Spatial Statistics, Python, Operations Research]
+categories: [Optimization, Spatial Statistics, Python]
 image: featured.svg
 toc: true
 ---
