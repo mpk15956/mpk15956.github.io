@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,9 +11,6 @@
 
 <title>Multi-Objective Spatial Optimization – Michael P. Kerr</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,14 +29,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-12acf3a2dea5fb6071b1261511aaf884.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1d4f84655f446305ac42a8f1abcf7405.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -158,19 +156,26 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
 <p>I built a custom Python optimization engine to traverse the highly constrained discrete state-space of map topologies, leveraging object-oriented metaheuristics.</p>
 <ul>
-<li>The core architecture is built in Python, utilizing object-oriented design to implement custom metaheuristic frameworks from scratch.</li>
+<li>The architecture leverages custom metaheuristic frameworks implemented from scratch.</li>
 <li>I implemented and benchmarked several search algorithms, including Simulated Annealing (SA), NSGA-II, and Tabu Search. SA was selected as the primary solver for the study due to its superior convergence on this specific discrete landscape across 500,000-evaluation budgets.</li>
 <li>The model evaluates a 1:1:1 composite objective, forcing the algorithms to simultaneously balance Jain’s Fairness Index (JFI) for baseline equity, Global Moran’s I for systemic dispersion, and a Local Spatial Autocorrelation Proxy (LSAP) to penalize unnatural clustering.</li>
 </ul>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>A computational study comprising five ablation conditions across 100 paired seeds revealed that scalar fairness fails to capture neighborhood patterns.</p>
-<p>When optimizing strictly for global dispersion without a local penalty, a pathological local clustering effect emerged, which is a problem entirely absent in random or purely fairness-optimized maps. However, by introducing the local term (LSAP) to the composite objective, the optimizer successfully suppressed this structural pathology with a negligible cost to median Jain’s Fairness.</p>
+<p>A computational study comprising five ablation conditions across 100 paired seeds revealed that scalar fairness alone fails to capture neighborhood patterns. When optimizing strictly for global dispersion without a local penalty, a pathological local clustering effect emerged, which was a problem entirely absent in random or purely fairness-optimized maps.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig-orthogonality-output-1.svg" class="img-fluid figure-img"></p>
+<figcaption><strong>Figure 1:</strong> Objective space scatter plot comparing the five optimization conditions. The single-objective runs (e.g., JFI-only) exhibit a wide, fragile vertical spread, while the full composite objective tightly converges near the optimal intersection.</figcaption>
+</figure>
+</div>
+<p>At first glance, it seems paradoxical that a solver juggling three competing objectives (the full C4 composite) achieves tighter, more consistent convergence than algorithms solving for a single metric. However, the data reveals a fundamental property of the optimization landscape: structural constraints act as mathematical regularizers.</p>
+<p>Naive, single-objective searches are highly seed-dependent and fragile, easily trapping the solver in deep local minima. By introducing Moran’s I and LSAP penalties, the algorithm is mathematically forced away from these pits and into smoother, dispersed regions of the space. This regularization dramatically reduces the entropy of the search, yielding a highly robust, tightly clustered optimal result regardless of the initial random seed.</p>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>This work extends Anselin’s global-local (LISA) distinction into the realm of combinatorial optimization. The empirical evidence demonstrates that spatial metrics provide vital structural information beyond standard scalar fairness constraints, showing that equity and dispersion can be mathematically harmonized.</p>
+<p>This work extends Anselin’s global-local (LISA) distinction into the realm of combinatorial optimization. The empirical evidence demonstrates that spatial metrics provide vital structural information beyond standard scalar fairness constraints. By formalizing the domain’s spatial rules, the project demonstrates that systemic equity and geographic dispersion can be harmonized.</p>
 
 
 </section>
