@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-244ce1b9ec229af56bb6f90d24b3371d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -183,27 +183,49 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <script>
+
 document.addEventListener('DOMContentLoaded', function() {
+
   var navEl = document.getElementById('navbarCollapse');
+
   if (!navEl) return;
 
+
+
   var backdrop = document.createElement('div');
+
   backdrop.className = 'nav-backdrop';
+
   document.body.appendChild(backdrop);
 
+
+
   navEl.addEventListener('show.bs.collapse', function() {
+
     backdrop.classList.add('show');
+
   });
+
+
 
   navEl.addEventListener('hide.bs.collapse', function() {
+
     backdrop.classList.remove('show');
+
   });
 
+
+
   backdrop.addEventListener('click', function() {
+
     bootstrap.Collapse.getInstance(navEl).hide();
+
   });
+
 });
+
 </script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
