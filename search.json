@@ -1,73 +1,17 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Multi-Objective Spatial Optimization\n\n\n\nOptimization\n\nSpatial Statistics\n\nPython\n\n\n\nBalancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Data Analysis of Karst Terrain\n\n\n\nTopological Data Analysis (TDA)\n\nMachine Learning\n\nPython\n\nGeomorphometry\n\n\n\nEvaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.\n\n\n\n\n\n\nDec 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nUrban Green Space Utilization and Spatial Equity\n\n\n\nData Engineering\n\nPython\n\nGIS\n\nSpatial Equity\n\n\n\nEngineering a geospatial data pipeline to analyze crowdsourced GPS trajectories and environmental accessibility.\n\n\n\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/karst-tda/index.html",
-    "href": "projects/karst-tda/index.html",
-    "title": "Topological Data Analysis of Karst Terrain",
-    "section": "",
-    "text": "Karst landscapes, such as the Mammoth Cave system in Kentucky, present a unique geomorphological challenge. Their defining features (sinkholes, complex drainage networks, and subterranean voids) are highly topological in nature. Traditional geomorphometry relies on multi-scale derivative calculations (e.g., slope, aspect, TWI) that are computationally intensive and difficult to scale. Conversely, modern deep learning vision models are powerful but relatively opaque feature extractors. This project investigated whether topological data analysis (TDA) could serve as a mathematically interpretable, computationally efficient alternative to extract multiscale spatial features from digital elevation models (DEMs)."
-  },
-  {
-    "objectID": "projects/karst-tda/index.html#background",
-    "href": "projects/karst-tda/index.html#background",
-    "title": "Topological Data Analysis of Karst Terrain",
-    "section": "",
-    "text": "Karst landscapes, such as the Mammoth Cave system in Kentucky, present a unique geomorphological challenge. Their defining features (sinkholes, complex drainage networks, and subterranean voids) are highly topological in nature. Traditional geomorphometry relies on multi-scale derivative calculations (e.g., slope, aspect, TWI) that are computationally intensive and difficult to scale. Conversely, modern deep learning vision models are powerful but relatively opaque feature extractors. This project investigated whether topological data analysis (TDA) could serve as a mathematically interpretable, computationally efficient alternative to extract multiscale spatial features from digital elevation models (DEMs)."
-  },
-  {
-    "objectID": "projects/karst-tda/index.html#methodology",
-    "href": "projects/karst-tda/index.html#methodology",
-    "title": "Topological Data Analysis of Karst Terrain",
-    "section": "Methodology",
-    "text": "Methodology\nA feature extraction and evaluation pipeline was developed to process over 30,000 DEM tiles, enabling a comparative analysis of traditional geomorphometric features, pre-trained vision models (ResNet), and TDA-derived attributes.\n\nPipeline implementation was conducted in Python, integrating giotto-tda for topological computations, WhiteboxTools for terrain-derivative generation, and scikit-learn for machine-learning classification.\nTo maintain mathematical validity, persistent homology was excluded from circular variables (e.g., aspect) and aggregate statistical descriptors (e.g., texture). TDA was strictly applied to elevation and slope derivatives. Terrain topology was encoded using Betti curves to form stable vector representations.\nModel performance was assessed using F1-macro scores, leveraging both random and spatially constrained 5-fold cross-validation to evaluate geographic generalization.\n\nTo visualize the semantic alignment between these vastly different approaches, we map how each method interprets the same discrete piece of terrain (Figure 1).\n\n\n\nFigure 1: A comparison of the topological feature representations of the same karst terrain tile."
-  },
-  {
-    "objectID": "projects/karst-tda/index.html#results",
-    "href": "projects/karst-tda/index.html#results",
-    "title": "Topological Data Analysis of Karst Terrain",
-    "section": "Results",
-    "text": "Results\nRigorous equivalence testing was conducted using Two One-Sided Tests (TOST), with Bonferroni correction applied (\\(\\alpha=0.000714\\)) to rigorously control for type I error.\nThe empirical evidence revealed that while pure TDA was efficient (Figure 2), it underperforms traditional geomorphometry as a standalone classifier (F1: 0.606 vs. 0.731). The statistical testing identified three robust hybrid methods, each combining various traditional geomorphometry features (e.g., slope, aspect, TWI) with topological Betti feature representations from TDA. Specifically, a Multi-scale (traditional spatial derivatives) + Betti (TDA-based) feature union achieved practical predictive equivalence (F1: 0.663 in spatial CV) compared to the best traditional baseline.\n\n\n\nFigure 2: Computational feasibility comparison demonstrating the significant time reduction achieved by TDA pipelines (~0.0087 seconds per tile) compared to traditional multi-scale derivatives (~0.4648 seconds)."
-  },
-  {
-    "objectID": "projects/karst-tda/index.html#conclusion",
-    "href": "projects/karst-tda/index.html#conclusion",
-    "title": "Topological Data Analysis of Karst Terrain",
-    "section": "Conclusion",
-    "text": "Conclusion\nThese results demonstrate that topological features are highly efficient, low-dimensional supplements to classical spatial statistics. Consequently, TDA is best employed alongside, rather than as a substitute for, physics-driven geomorphological derivatives."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Michael P. Kerr",
-    "section": "",
-    "text": "I am a computational geographer integrating high-performance computing, machine learning, and spatial statistics to address pressing problems. My research transforms complex, multi-dimensional data into interpretable models, emphasizing spatial optimization and algorithmic equity to reveal meaningful, scale-invariant patterns. As I transition to graduate research, I am focused on deploying computer vision and the neural rendering models (NeRFs) for real-time edge hardware. Exploring methods for learning from differential equations and tensor methods, I aim to develop physics-based models that bridge advanced mathematics with actionable strategies for environmental resilience and social equity."
-  },
-  {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Michael P. Kerr",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nComputer Vision & Edge Computing\nSpatial Optimization & Algorithmic Fairness\nTopological Data Analysis (TDA) & Spatial Statistics\nScientific Machine Learning (SciML) & Tensor Decomposition"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Michael P. Kerr",
-    "section": "Education",
-    "text": "Education\nUniversity of Georgia, Athens, GA\nB.S. in Geography & Applied Mathematics (Expected July 2026)"
-  },
-  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "CV",
     "section": "",
     "text": "Open in New Tab\n      \n      \n         Download"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Multi-Objective Spatial Optimization\n\n\n\nOptimization\n\nSpatial Statistics\n\nPython\n\n\n\nBalancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Data Analysis of Karst Terrain\n\n\n\nTopological Data Analysis (TDA)\n\nMachine Learning\n\nPython\n\nGeomorphometry\n\n\n\nEvaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.\n\n\n\n\n\n\nDec 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nUrban Green Space Utilization and Spatial Equity\n\n\n\nData Engineering\n\nPython\n\nGIS\n\nSpatial Equity\n\n\n\nEngineering a geospatial data pipeline to analyze crowdsourced GPS trajectories and environmental accessibility.\n\n\n\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/green-space-equity/index.html",
@@ -145,5 +89,61 @@
     "title": "Multi-Objective Spatial Optimization",
     "section": "Conclusion",
     "text": "Conclusion\nThis work extends Anselin’s global-local (LISA) distinction into the realm of combinatorial optimization. The empirical evidence demonstrates that spatial metrics provide vital structural information beyond standard scalar fairness constraints. By formalizing the domain’s spatial rules, the project demonstrates that systemic equity and geographic dispersion can be harmonized."
+  },
+  {
+    "objectID": "projects/karst-tda/index.html",
+    "href": "projects/karst-tda/index.html",
+    "title": "Topological Data Analysis of Karst Terrain",
+    "section": "",
+    "text": "Karst landscapes, such as the Mammoth Cave system in Kentucky, present a unique geomorphological challenge. Their defining features (sinkholes, complex drainage networks, and subterranean voids) are highly topological in nature. Traditional geomorphometry relies on multi-scale derivative calculations (e.g., slope, aspect, TWI) that are computationally intensive and difficult to scale. Conversely, modern deep learning vision models are powerful but relatively opaque feature extractors. This project investigated whether topological data analysis (TDA) could serve as a mathematically interpretable, computationally efficient alternative to extract multiscale spatial features from digital elevation models (DEMs)."
+  },
+  {
+    "objectID": "projects/karst-tda/index.html#background",
+    "href": "projects/karst-tda/index.html#background",
+    "title": "Topological Data Analysis of Karst Terrain",
+    "section": "",
+    "text": "Karst landscapes, such as the Mammoth Cave system in Kentucky, present a unique geomorphological challenge. Their defining features (sinkholes, complex drainage networks, and subterranean voids) are highly topological in nature. Traditional geomorphometry relies on multi-scale derivative calculations (e.g., slope, aspect, TWI) that are computationally intensive and difficult to scale. Conversely, modern deep learning vision models are powerful but relatively opaque feature extractors. This project investigated whether topological data analysis (TDA) could serve as a mathematically interpretable, computationally efficient alternative to extract multiscale spatial features from digital elevation models (DEMs)."
+  },
+  {
+    "objectID": "projects/karst-tda/index.html#methodology",
+    "href": "projects/karst-tda/index.html#methodology",
+    "title": "Topological Data Analysis of Karst Terrain",
+    "section": "Methodology",
+    "text": "Methodology\nA feature extraction and evaluation pipeline was developed to process over 30,000 DEM tiles, enabling a comparative analysis of traditional geomorphometric features, pre-trained vision models (ResNet), and TDA-derived attributes.\n\nPipeline implementation was conducted in Python, integrating giotto-tda for topological computations, WhiteboxTools for terrain-derivative generation, and scikit-learn for machine-learning classification.\nTo maintain mathematical validity, persistent homology was excluded from circular variables (e.g., aspect) and aggregate statistical descriptors (e.g., texture). TDA was strictly applied to elevation and slope derivatives. Terrain topology was encoded using Betti curves to form stable vector representations.\nModel performance was assessed using F1-macro scores, leveraging both random and spatially constrained 5-fold cross-validation to evaluate geographic generalization.\n\nTo visualize the semantic alignment between these vastly different approaches, we map how each method interprets the same discrete piece of terrain (Figure 1).\n\n\n\nFigure 1: A comparison of the topological feature representations of the same karst terrain tile."
+  },
+  {
+    "objectID": "projects/karst-tda/index.html#results",
+    "href": "projects/karst-tda/index.html#results",
+    "title": "Topological Data Analysis of Karst Terrain",
+    "section": "Results",
+    "text": "Results\nRigorous equivalence testing was conducted using Two One-Sided Tests (TOST), with Bonferroni correction applied (\\(\\alpha=0.000714\\)) to rigorously control for type I error.\nThe empirical evidence revealed that while pure TDA was efficient (Figure 2), it underperforms traditional geomorphometry as a standalone classifier (F1: 0.606 vs. 0.731). The statistical testing identified three robust hybrid methods, each combining various traditional geomorphometry features (e.g., slope, aspect, TWI) with topological Betti feature representations from TDA. Specifically, a Multi-scale (traditional spatial derivatives) + Betti (TDA-based) feature union achieved practical predictive equivalence (F1: 0.663 in spatial CV) compared to the best traditional baseline.\n\n\n\nFigure 2: Computational feasibility comparison demonstrating the significant time reduction achieved by TDA pipelines (~0.0087 seconds per tile) compared to traditional multi-scale derivatives (~0.4648 seconds)."
+  },
+  {
+    "objectID": "projects/karst-tda/index.html#conclusion",
+    "href": "projects/karst-tda/index.html#conclusion",
+    "title": "Topological Data Analysis of Karst Terrain",
+    "section": "Conclusion",
+    "text": "Conclusion\nThese results demonstrate that topological features are highly efficient, low-dimensional supplements to classical spatial statistics. Consequently, TDA is best employed alongside, rather than as a substitute for, physics-driven geomorphological derivatives."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Michael P. Kerr",
+    "section": "",
+    "text": "I am a computational geographer integrating high-performance computing, machine learning, and spatial statistics to address pressing problems. My research transforms complex, multi-dimensional data into interpretable models, emphasizing spatial optimization and algorithmic equity to reveal meaningful, scale-invariant patterns. As I transition to graduate research, I am focused on deploying computer vision and the neural rendering models (NeRFs) for real-time edge hardware. Exploring methods for learning from differential equations and tensor methods, I aim to develop physics-based models that bridge advanced mathematics with actionable strategies for environmental resilience and social equity."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Michael P. Kerr",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nComputer Vision & Edge Computing\nSpatial Optimization & Algorithmic Fairness\nTopological Data Analysis (TDA) & Spatial Statistics\nScientific Machine Learning (SciML) & Tensor Decomposition"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Michael P. Kerr",
+    "section": "Education",
+    "text": "Education\nUniversity of Georgia, Athens, GA\nB.S. in Geography & Applied Mathematics (Expected July 2026)"
   }
 ]
