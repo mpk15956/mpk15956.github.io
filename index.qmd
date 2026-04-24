@@ -1,6 +1,6 @@
 ---
 title: "Michael P. Kerr"
-description: "Michael P. Kerr — applied math and geography at UGA. Research in topological data analysis, scientific machine learning, and computational geography."
+description-meta: "Michael P. Kerr — applied math and geography at UGA. Research in topological data analysis, scientific machine learning, and computational geography."
 toc: false
 about:
     template: trestles

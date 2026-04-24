@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "Research projects in topological data analysis, spatial optimization with algorithmic fairness, and geospatial data engineering."
+description-meta: "Research projects in topological data analysis, spatial optimization with algorithmic fairness, and geospatial data engineering."
 listing:
   contents: "projects/*/*.qmd"
   type: grid

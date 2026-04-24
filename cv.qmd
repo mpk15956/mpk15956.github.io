@@ -1,6 +1,6 @@
 ---
 title: "CV"
-description: "Curriculum vitae of Michael P. Kerr — coursework, teaching, and research in applied mathematics and geography at UGA."
+description-meta: "Curriculum vitae of Michael P. Kerr — coursework, teaching, and research in applied mathematics and geography at UGA."
 toc: false
 ---
 

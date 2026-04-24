@@ -18,8 +18,6 @@ website:
       - projects.qmd
       - cv.qmd
 
-author: "Michael P. Kerr"
-
 format:
   html:
     theme:
