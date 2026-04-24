@@ -25,7 +25,9 @@ format:
     css: styles.css
     toc: true
     canonical-url: true
-    include-in-header: person.html
+    include-in-header:
+      - person.html
+      - search-verification.html
     include-after-body: nav-overlay.html
 
 execute:
