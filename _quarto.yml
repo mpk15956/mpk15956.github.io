@@ -3,6 +3,11 @@ project:
 
 website:
   title: "Michael P. Kerr"
+  site-url: "https://mpk15956.github.io/"
+  description: "Undergraduate researcher in applied mathematics and geography at UGA. Topological data analysis, scientific machine learning, and geospatial modeling."
+  image: profile.jpg
+  open-graph: true
+  twitter-card: true
   search: false
   page-footer: "Copyright 2026, Michael P. Kerr"
   navbar:
@@ -13,16 +18,17 @@ website:
       - projects.qmd
       - cv.qmd
 
+author: "Michael P. Kerr"
+
 format:
   html:
     theme:
       - Cosmo
     css: styles.css
     toc: true
+    canonical-url: true
+    include-in-header: person.html
     include-after-body: nav-overlay.html
 
 execute:
   freeze: auto
-
-
-
