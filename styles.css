@@ -1,5 +1,15 @@
 /* css styles */
 
+/* Keep content figures legible in dark mode — most project PNGs/SVGs
+   are exported from matplotlib/ggplot with dark text on transparent
+   backgrounds, which vanishes on a dark page. */
+[data-bs-theme="dark"] main.content img,
+[data-bs-theme="dark"] main.content svg {
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+
 /* ── About sidebar: vertical stacked standard hyperlinks ── */
 div.quarto-about-trestles .about-entity .about-links {
   flex-direction: column;

@@ -1,0 +1,10 @@
+---
+title: "Page not found"
+toc: false
+---
+
+That page doesn't exist, or it has moved.
+
+- [Home](./)
+- [Projects](./projects.html)
+- [CV](./cv.html)

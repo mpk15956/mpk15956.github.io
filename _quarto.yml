@@ -21,7 +21,8 @@ website:
 format:
   html:
     theme:
-      - Cosmo
+      light: cosmo
+      dark: darkly
     css: styles.css
     toc: true
     canonical-url: true
