@@ -11,7 +11,7 @@ cp _assets/favicon.svg favicon.svg
 inkscape _assets/favicon.svg --export-type=png --export-width=16  -o favicon-16.png  >/dev/null
 inkscape _assets/favicon.svg --export-type=png --export-width=32  -o favicon-32.png  >/dev/null
 inkscape _assets/favicon.svg --export-type=png --export-width=48  -o favicon-48.png  >/dev/null
-inkscape _assets/favicon.svg --export-type=png --export-width=180 -o apple-touch-icon.png >/dev/null
+inkscape _assets/apple-touch-icon.svg --export-type=png --export-width=180 -o apple-touch-icon.png >/dev/null
 magick favicon-16.png favicon-32.png favicon-48.png favicon.ico
 rm favicon-16.png favicon-32.png favicon-48.png
 

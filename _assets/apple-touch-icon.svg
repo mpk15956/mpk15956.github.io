@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Apple touch icons need a solid background — iOS applies rounded
+     corners and a transparent icon would show whatever's behind on the
+     home screen. Brand color matches custom.scss / favicon.svg. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <rect width="180" height="180" fill="#2780e3"/>
+  <text x="90" y="120"
+        text-anchor="middle"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="86"
+        font-weight="800"
+        fill="#ffffff">MPK</text>
+</svg>
