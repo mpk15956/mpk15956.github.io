@@ -1,0 +1,106 @@
+---
+title: "Michael P. Kerr"
+author:
+  - name: "Athens, GA"
+    affiliations: "(404) 901-2505"
+    email: "[michael.kerr@uga.edu](mailto:michael.kerr@uga.edu) | [github.com/mpk15956](https://github.com/mpk15956) | [linkedin.com/in/mpk15956](https://linkedin.com/in/mpk15956)"
+format:
+  typst:
+    margin:
+        x: 0.5in
+        y: 0.5in
+    fontsize: 11pt
+    include-in-header:
+      - text: |
+          #show heading.where(level: 1): it => block(
+            width: 100%,
+            stroke: (bottom: 0.5pt + black),
+            inset: (bottom: 3pt),
+            text(smallcaps(it.body))
+          )
+    page-numbering: false
+abstract: |
+  Computational geographer bridging topological data analysis (TDA), spatial statistics, and high-performance computing to model sustainable environmental systems. Translating high-dimensional data into interpretable inputs for predictive models to support decision-making frameworks for environmental resilience and social equity.
+abstract-title: "Research Interests"
+---
+
+## Education
+
+**The University of Georgia** `#h(1fr)`{=typst} Athens, GA \
+*Bachelor of Science in Applied Mathematics and Geography* `#h(1fr)`{=typst} Expected July 2026 \
+Minor: Computer Science `#h(1fr)`{=typst} GPA: 3.60/4.00 \
+Certificates: Water Resources
+
+## Relevant Coursework
+
+- **Mathematics:** Real Analysis, Point Set Topology, Partial Differential Equations, Numerical Analysis, Probability
+- **Computer Science:** Data Structures, Theory of Computing, Data Mining, Data Science and Applied Machine Learning
+- **Geography:** Geospatial Artificial Intelligence, Fluvial Geomorphology, People, Planet, and Profit (Study Abroad)
+
+## Research Experience
+
+**Department of Mathematics, University of Georgia** `#h(1fr)`{=typst} Athens, GA \
+*Directed Reading Program Student (Mentor: Cameron Thomas, PhD Candidate)* `#h(1fr)`{=typst} August 2025 -- December 2025
+
+- Developing a reproducible, GPU-accelerated topological data analysis (TDA) pipeline in Python to extract novel, multiscale land-surface parameters from digital elevation models (DEMs).
+- Research Objectives: (1) To test the hypothesis that geomorphic provinces possess distinct topological signatures, and (2) to validate whether these signatures improve predictive models of physical erosion.
+- Methodology: Employing Gudhi, Dask, and PyTorch for persistent homology computation and integrating results into a predictive machine learning framework.
+
+**Department of Agricultural and Applied Economics, University of Georgia** `#h(1fr)`{=typst} Athens, GA \
+*Undergraduate Researcher (Advisor: Craig Landry, PhD)* `#h(1fr)`{=typst} July 2024 -- June 2025
+
+- Engineered a Python analysis to process 250,000+ GPS records, quantifying green-space utilization across Athens, GA.
+- Developed a spatial equity model using ArcGIS that identified critical gaps in park access for underserved communities.
+- Presented findings at the CAES Undergraduate Research Symposium, incorporating feedback from faculty judges.
+
+**Department of History and Geography, Georgia College & State University** `#h(1fr)`{=typst} Milledgeville, GA \
+*Geographic Information Science Student (Advisor: Omolola Ologunorisa, PhD)* `#h(1fr)`{=typst} August 2023 -- December 2023
+
+- Executed a site suitability analysis for optimal bike path placement by applying Morphological Spatial Pattern Analysis (MSPA) to slope, land cover, and traffic data.
+- Performed network analysis on OpenStreetMap data to generate and validate routes optimized for commuter safety and multi-modal connectivity.
+
+## Selected Presentations
+
+- Kerr, Michael. 2025. "Analyzing Green Space Utilization in Athens, GA Through GPS Data and Spatial Analysis." Oral Presentation at the CAES Undergraduate Research Symposium, Athens, GA, April 2.
+
+## Teaching & Leadership Experience
+
+**Leave No Trace Level 1 Instructor Course, Atlanta Area Council, BSA** `#h(1fr)`{=typst} Blairsville, GA \
+*Co-Instructor (Annual)* `#h(1fr)`{=typst} November 2021 -- Present
+
+- Co-designed and co-led an intensive weekend-long certification course for adult leaders on Leave No Trace outdoor ethics and pedagogy.
+- Developed curriculum, planned instructional activities, and facilitated training sessions for cohorts of 15--25 participants.
+- Mentored aspiring instructors in pedagogical techniques for teaching environmental stewardship principles to diverse audiences.
+
+**Langford Nature Center, Bert Adams Scout Camp, Atlanta Area Council, BSA** `#h(1fr)`{=typst} Covington, GA \
+*Ecology Program Director (Promoted)* `#h(1fr)`{=typst} May 2017 -- January 2023
+
+- Designed and standardized a comprehensive ecology curriculum for 5+ instructors and over 1,000 annual participants, creating scalable and reproducible lesson plans.
+- Employed diverse pedagogical methods grounded in Kolb's Experiential Learning Model, integrating lectures, guided small-group discussions, and hands-on fieldwork.
+- Led a 'train-the-trainer' workshop on Leave No Trace ethics for 80+ staff, mentoring instructors in evidence-based experiential teaching methods.
+
+## Other Experience
+
+**UGA Carl Vinson Institute of Government** `#h(1fr)`{=typst} Athens, GA \
+*GIS Student Assistant* `#h(1fr)`{=typst} February 2024 -- May 2024
+
+- Developed and debugged ArcPy script to automate a spatial join for 14,000+ records onto a fragmented road network.
+- Eliminated manual errors and cut processing time by >99%, compressing a 6-month project in three weeks.
+
+## Professional Affiliations
+
+**American Association of Geographers (AAG)**, *Student Member* `#h(1fr)`{=typst} April 2024 -- Present \
+**Southeastern Division of the AAG (SEDAAG)**, *Student Member* `#h(1fr)`{=typst} April 2024 -- Present
+
+## Honors & Awards
+
+**President's & Dean's List**, *Various Institutions* `#h(1fr)`{=typst} 2021 -- 2025 \
+**HOPE Scholarship**, *State of Georgia* `#h(1fr)`{=typst} 2021 -- 2025 \
+**Eagle Scout**, *Atlanta Area Council, BSA* `#h(1fr)`{=typst} December 2020
+
+## Technical Skills
+
+- **Programming:** Python (NumPy, Pandas, SciPy), TypeScript, R, Bash, Java, Mathematica, Matlab, Julia
+- **Geospatial Analysis:** GIS Modeling (ArcGIS Pro, QGIS), DEM Processing, Network Analysis, MSPA, Geocoding
+- **Machine Learning:** TDA (Persistent Homology), Regression (Scikit-learn), Computer Vision (PyTorch)
+- **HPC & Data:** Distributed Computing (Dask), GPU Acceleration (CUDA/CuPy), Containerization (Docker/Podman)

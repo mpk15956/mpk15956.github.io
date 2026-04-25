@@ -1,5 +1,8 @@
 project:
   type: website
+  pre-render:
+    - quarto render _cv-source/cv.qmd
+    - cp _cv-source/cv.pdf cv.pdf
 
 website:
   title: "Michael P. Kerr"
@@ -16,7 +19,8 @@ website:
       - href: index.qmd
         text: Home
       - projects.qmd
-      - cv.qmd
+      - href: cv.pdf
+        text: CV
 
 format:
   html:
