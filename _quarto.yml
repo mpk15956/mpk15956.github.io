@@ -19,8 +19,6 @@ website:
       - href: index.qmd
         text: Home
       - projects.qmd
-      - href: cv.pdf
-        text: CV
 
 format:
   html:
