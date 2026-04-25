@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - cv.pdf
   pre-render:
     - quarto render _cv-source/cv.qmd
     - cp _cv-source/cv.pdf cv.pdf
