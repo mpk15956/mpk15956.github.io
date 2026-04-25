@@ -8,9 +8,9 @@
       text { fill: #4a9aef; }
     }
   </style>
-  <text x="32" y="48"
+  <text x="32" y="52"
         text-anchor="middle"
         font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
-        font-size="46"
-        font-weight="800">MK</text>
+        font-size="60"
+        font-weight="800">M</text>
 </svg>
