@@ -1,17 +1,24 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Michael P. Kerr",
     "section": "",
-    "text": "Open in New Tab\n      \n      \n         Download"
+    "text": "I am a computational geographer integrating high-performance computing, machine learning, and spatial statistics to address pressing problems. My research transforms complex, multi-dimensional data into interpretable models, emphasizing spatial optimization and algorithmic equity to reveal meaningful, scale-invariant patterns. As I transition to graduate research, I am focused on deploying computer vision and the neural rendering models (NeRFs) for real-time edge hardware. Exploring methods for learning from differential equations and tensor methods, I aim to develop physics-based models that bridge advanced mathematics with actionable strategies for environmental resilience and social equity."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Multi-Objective Spatial Optimization\n\n\n\nOptimization\n\nSpatial Statistics\n\nPython\n\n\n\nBalancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Data Analysis of Karst Terrain\n\n\n\nTopological Data Analysis (TDA)\n\nMachine Learning\n\nPython\n\nGeomorphometry\n\n\n\nEvaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.\n\n\n\n\n\n\nDec 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nUrban Green Space Utilization and Spatial Equity\n\n\n\nData Engineering\n\nPython\n\nGIS\n\nSpatial Equity\n\n\n\nEngineering a geospatial data pipeline to analyze crowdsourced GPS trajectories and environmental accessibility.\n\n\n\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Michael P. Kerr",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nComputer Vision & Edge Computing\nSpatial Optimization & Algorithmic Fairness\nTopological Data Analysis (TDA) & Spatial Statistics\nScientific Machine Learning (SciML) & Tensor Decomposition"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Michael P. Kerr",
+    "section": "Education",
+    "text": "Education\nUniversity of Georgia, Athens, GA\nB.S. in Geography & Applied Mathematics (Expected July 2026)"
   },
   {
     "objectID": "projects/karst-tda/index.html",
@@ -126,24 +133,10 @@
     "text": "Conclusion\nThis project demonstrates how data engineering can bridge the gap between theoretical and empirical models of environmental equity. By converting complex mobility data into actionable measures of green space utilization, the work builds on detailed analysis of amenities, statistical outliers, and spatial clusters identified throughout Athens, Georgia. These advances connect usage patterns to real equity concerns, delivering clearer evidence for researchers and policymakers to address urban environmental equity effectively."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Michael P. Kerr",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "I am a computational geographer integrating high-performance computing, machine learning, and spatial statistics to address pressing problems. My research transforms complex, multi-dimensional data into interpretable models, emphasizing spatial optimization and algorithmic equity to reveal meaningful, scale-invariant patterns. As I transition to graduate research, I am focused on deploying computer vision and the neural rendering models (NeRFs) for real-time edge hardware. Exploring methods for learning from differential equations and tensor methods, I aim to develop physics-based models that bridge advanced mathematics with actionable strategies for environmental resilience and social equity."
-  },
-  {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Michael P. Kerr",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nComputer Vision & Edge Computing\nSpatial Optimization & Algorithmic Fairness\nTopological Data Analysis (TDA) & Spatial Statistics\nScientific Machine Learning (SciML) & Tensor Decomposition"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Michael P. Kerr",
-    "section": "Education",
-    "text": "Education\nUniversity of Georgia, Athens, GA\nB.S. in Geography & Applied Mathematics (Expected July 2026)"
+    "text": "Multi-Objective Spatial Optimization\n\n\n\nOptimization\n\nSpatial Statistics\n\nPython\n\n\n\nBalancing global dispersion, local clustering, and algorithmic fairness on combinatorial spatial domains.\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTopological Data Analysis of Karst Terrain\n\n\n\nTopological Data Analysis (TDA)\n\nMachine Learning\n\nPython\n\nGeomorphometry\n\n\n\nEvaluating persistent homology and Betti curves as computationally efficient features for surficial geology classification.\n\n\n\n\n\n\nDec 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nUrban Green Space Utilization and Spatial Equity\n\n\n\nData Engineering\n\nPython\n\nGIS\n\nSpatial Equity\n\n\n\nEngineering a geospatial data pipeline to analyze crowdsourced GPS trajectories and environmental accessibility.\n\n\n\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]

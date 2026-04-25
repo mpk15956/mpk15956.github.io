@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Brand color (#2780e3) is also pinned in custom.scss / matches the
+     site's $primary so the favicon stays in sync if the theme changes. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <style>
+    text { fill: #2780e3; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #4a9aef; }
+    }
+  </style>
+  <text x="32" y="52"
+        text-anchor="middle"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="60"
+        font-weight="800">M</text>
+</svg>
