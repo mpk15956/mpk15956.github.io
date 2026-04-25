@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="8" ry="8" fill="#2780e3"/>
+  <text x="32" y="44"
+        text-anchor="middle"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="26"
+        font-weight="700"
+        fill="#ffffff">MPK</text>
+</svg>

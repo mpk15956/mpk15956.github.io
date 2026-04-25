@@ -2,6 +2,10 @@ project:
   type: website
   resources:
     - cv.pdf
+    - favicon.svg
+    - favicon.ico
+    - apple-touch-icon.png
+    - og-card.png
   pre-render:
     - quarto render _cv-source/cv.qmd
     - cp _cv-source/cv.pdf cv.pdf
@@ -10,7 +14,7 @@ website:
   title: "Michael P. Kerr"
   site-url: "https://mpk15956.github.io/"
   description: "Undergraduate researcher in applied mathematics and geography at UGA. Topological data analysis, scientific machine learning, and geospatial modeling."
-  image: profile.jpg
+  image: og-card.png
   open-graph: true
   twitter-card: true
   search: false
@@ -32,6 +36,7 @@ format:
     include-in-header:
       - person.html
       - search-verification.html
+      - icons.html
     include-after-body: nav-overlay.html
 
 execute:

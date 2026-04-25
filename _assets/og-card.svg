@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2780e3"/>
+      <stop offset="100%" stop-color="#1d5fb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <text x="80" y="280"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="92"
+        font-weight="700"
+        fill="#ffffff">Michael P. Kerr</text>
+
+  <text x="80" y="360"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="36"
+        font-weight="400"
+        fill="#ffffff"
+        opacity="0.92">Applied math &amp; geography at UGA</text>
+
+  <text x="80" y="430"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="28"
+        font-weight="400"
+        fill="#ffffff"
+        opacity="0.78">Topological data analysis  ·  Scientific ML  ·  Computational geography</text>
+
+  <rect x="80" y="500" width="120" height="6" fill="#ffffff" opacity="0.85"/>
+  <text x="80" y="555"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="22"
+        font-weight="400"
+        fill="#ffffff"
+        opacity="0.65">mpk15956.github.io</text>
+</svg>
