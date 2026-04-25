@@ -1,0 +1,24 @@
+name: Schema validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.8.27
+
+      - name: Render site
+        run: quarto render
+
+      - name: Validate JSON-LD
+        run: python3 scripts/validate-schema.py
